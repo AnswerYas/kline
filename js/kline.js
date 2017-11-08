@@ -9533,7 +9533,7 @@ function switch_tools(name) {
         ChartManager.getInstance().setRunningMode(ChartManager.getInstance()._beforeDrawingTool);
         ChartManager.getInstance().redraw("All", true);
     }
-    on_size(KlineIns.width, KlineIns.height);
+    on_size();
 }
 
 function switch_indic(name) {
@@ -9563,7 +9563,7 @@ function switch_indic(name) {
         $('#chart_tabbar')[0].style.display = 'none';
         $("#chart_tabbar a").removeClass("selected");
     }
-    on_size(KlineIns.width, KlineIns.height);
+    on_size();
 }
 
 function switch_period(name) {
